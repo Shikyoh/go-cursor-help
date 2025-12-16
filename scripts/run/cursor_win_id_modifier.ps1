@@ -36,6 +36,7 @@ function Modify-CursorJSFiles {
         # 尝试其他可能的安装路径
         $alternatePaths = @(
             "E:\Program Files\Cursor",
+            "${env:ProgramFiles}\Cursor",
             "${env:ProgramFiles(x86)}\Cursor",
             "${env:USERPROFILE}\AppData\Local\Programs\Cursor"
         )
