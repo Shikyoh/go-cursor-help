@@ -367,6 +367,7 @@ function Restart-CursorAndWait {
 
         # 尝试使用备用路径
         $backupPaths = @(
+            "E:\Program Files\Cursor\Cursor.exe",
             "$env:LOCALAPPDATA\Programs\cursor\Cursor.exe",
             "$env:PROGRAMFILES\Cursor\Cursor.exe",
             "$env:PROGRAMFILES(X86)\Cursor\Cursor.exe"
@@ -744,6 +745,7 @@ function Test-CursorEnvironment {
 
     # 检查Cursor安装
     $cursorPaths = @(
+        "E:\Program Files\Cursor\Cursor.exe",
         "$env:LOCALAPPDATA\Programs\cursor\Cursor.exe",
         "$env:PROGRAMFILES\Cursor\Cursor.exe",
         "$env:PROGRAMFILES(X86)\Cursor\Cursor.exe"
@@ -1095,6 +1097,7 @@ function Start-CursorToGenerateConfig {
 
     # 查找Cursor可执行文件
     $cursorPaths = @(
+        "E:\Program Files\Cursor\Cursor.exe",
         "$env:LOCALAPPDATA\Programs\cursor\Cursor.exe",
         "$env:PROGRAMFILES\Cursor\Cursor.exe",
         "$env:PROGRAMFILES(X86)\Cursor\Cursor.exe"
@@ -1386,6 +1389,7 @@ function Close-CursorProcessAndSaveInfo {
         Write-Host "$BLUE💡 [提示]$NC 未发现 $processName 进程运行"
         # 尝试找到Cursor的安装路径
         $cursorPaths = @(
+            "E:\Program Files\Cursor\Cursor.exe",
             "$env:LOCALAPPDATA\Programs\cursor\Cursor.exe",
             "$env:PROGRAMFILES\Cursor\Cursor.exe",
             "$env:PROGRAMFILES(X86)\Cursor\Cursor.exe"
